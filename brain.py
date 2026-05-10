@@ -13,11 +13,9 @@ model = genai.GenerativeModel(
 
 async def get_ai_answer(user_text: str):
     try:
-        # Формуємо запит з контекстом (Етап 1: Правило мікро-ніші)
         prompt = f"Запит гравця про Project Sekai: {user_text}"
         response = await model.generate_content_async(prompt)
         
-        # Очищення тексту (Етап 2: Data Flow)
         return response.text.replace("*", "").replace("#", "")
     except Exception as e:
         return f"Бро, виникла помилка в системі ШІ: {e}"

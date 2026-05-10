@@ -15,10 +15,8 @@ async def start_cmd(message: types.Message):
 
 @dp.message(F.text)
 async def handle_all_messages(message: types.Message):
-    # Показуємо статус "друкує", щоб юзер бачив, що ШІ думає
     await bot.send_chat_action(message.chat.id, "typing")
     
-    # Отримуємо відповідь від нашого модуля brain.py
     answer = await get_ai_answer(message.text)
     
     await message.answer(answer)
