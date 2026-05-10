@@ -14,7 +14,7 @@
 
 - **Language:** Python 3.10+
 - **Framework:** [Aiogram 3.x](https://docs.aiogram.dev/) (Asynchronous Telegram API)
-- **AI Engine:** [Google Gemini 1.5 Flash](https://aistudio.google.com/)
+- **AI Engine:** [Google Gemini 2.5 Flash] Lite(https://aistudio.google.com/)
 - **Configuration:** Python-dotenv
 
 ## 🏗 Архітектура (System Design)
